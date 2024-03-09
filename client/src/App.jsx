@@ -10,7 +10,7 @@ import Allanswer from "./pages/Allanswer/Allanswer";
 import UserQuestion from "./pages/UserPage/UserQuestion";
 import UserAnswerPage from "./pages/UserPage/UserAnswerPage";
 import UserAnswerEdit from "./pages/UserPage/UserAnswerEdit";
-import UserQuestionEdite from "./pages/UserPage/UserQuestionEdite";
+
 import Four04 from "./pages/Four04";
 
 export const AppState = createContext();
@@ -46,7 +46,7 @@ function App() {
         <Route path="/questions/my-questions/:userid" element={<UserQuestion/>} />
         <Route path="/answer/my-answer/:userid" element={<UserAnswerPage/>} />
         <Route path="/answer/getanswer/:answerid" element={<UserAnswerEdit/>} />
-        <Route path="/questions/edit-question/:id" element={<UserQuestionEdite/>} />
+        
         <Route path='*' element={<Four04/>}/>
       </Routes>
     </AppState.Provider>
